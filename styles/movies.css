@@ -1,0 +1,25 @@
+#movies article {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#movies img {
+    width: 85%;
+    height: 500px;
+    object-fit: cover;
+    transition: box-shadow 0.2s transform 0.2s;
+}
+
+#movies div {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+}
+
+#movies article img:hover {
+    box-shadow: 0px 10px 40px #999;
+    transform: scale(1.05);
+}
