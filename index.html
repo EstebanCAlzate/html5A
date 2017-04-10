@@ -8,13 +8,11 @@
     <meta http-equiv="expires" content="0" />
     <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
     <meta http-equiv="pragma" content="no-cache" />
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="babel">
     <meta name="description" content="babel example project">
     <meta name="keywords" content="babel, example, html5, css3, js">
-
     <link rel="apple-touch-icon" sizes="57x57" href="assets/icons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/icons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/icons/apple-icon-72x72.png">
@@ -32,11 +30,8 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-
     <title>The Avengers</title>
-
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Oswald:200,300,400,500,600,700" rel="stylesheet">
-
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/grid.css">
     <link rel="stylesheet" href="styles/nav.css">
@@ -48,15 +43,12 @@
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/fonts.css">
-
 </head>
-
 
 <body>
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-
     <nav class="nav" id="nav">
         <a class="nav-logo" href="#home"><img src="assets/img/logo.gif" alt="Avenger's logo"></a>
         <ul class="nav-items">
@@ -87,11 +79,9 @@
             </div>
         </section>
         <section id="team" class="container-fluid">
-
             <header class="row">
                 <h2>Team</h2>
             </header>
-
             <div class="row">
                 <article class="col-2">
                     <img src="assets/img/profiles/ironman.jpg" alt="Iron Man">
@@ -161,51 +151,40 @@
             </div>
         </section>
         <section id="contact" class="container">
-
             <header class="row">
                 <h2>Contact</h2>
             </header>
-
             <div class="row">
-                <form action="//backend.com/conntact" class="col-offset-2 col-8">
-
+                <form action="//backend.com/conntact" class="col-offset-2 col-8" novalidate>
                     <div class="form-input">
                         <label for="name">Full name</label>
                         <input type="text" name="name" id="name" placeholder="Tell us your name" required>
                     </div>
-
                     <div class="form-input">
                         <label for="email">Email</label>
                         <input type="email" name="email" id="email" placeholder="Tell us your email" required pattern="[a-zA-Z0-9_\.\+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-\.]+">
                     </div>
-
                     <div class="form-radio">
                         <label for="male">Male</label>
                         <input type="radio" name="gender" id="male" value="male" required>
-
                         <label for="female">Female</label>
                         <input type="radio" name="gender" id="female" value="female" required>
                     </div>
-
                     <div class="form-input">
                         <label for="birthdate">birthdate</label>
                         <input type="date" name="birthdate" id="birthdate" required>
                     </div>
-
                     <div class="form-input">
                         <label for="message">message</label>
                         <textarea name="message" id="message" cols="30" rows="10" placeholder="What do you need?" required></textarea>
                     </div>
-
                     <button class="button" type="submit">Send!</button>
                 </form>
             </div>
-
         </section>
     </main>
     <footer id="footer" class="container-fluid footer">
         <div class="row">
-
             <ul class="footer-items col-8">
                 <li class="footer-item">
                     <a href="http://marvel.com/avengers" target="_blank">website</a>
@@ -220,18 +199,18 @@
                     <a href="https://www.instagram.com/avengersmovie/" target="_blank">instagram</a>
                 </li>
             </ul>
-
             <p class="footer-copyright col-4">
                 <mark>Marvel Studios</mark>
                 <time datetime="2017-01-01">2017</time>
             </p>
-
         </div>
     </footer>
-    <script src="scripts/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="scripts/service.photos.js"></script>
+    <script src="scripts/service.posts.js"></script>
+    <script src="scripts/movies.js"></script>
     <script src="scripts/contact.js"></script>
     <script src="scripts/team.js"></script>
-
 </body>
 
 </html>
