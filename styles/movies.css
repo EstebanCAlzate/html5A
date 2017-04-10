@@ -1,8 +1,5 @@
 #movies article {
     width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 #movies img {

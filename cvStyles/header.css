@@ -1,0 +1,51 @@
+#header {
+    background-color: #EEA7A3;
+}
+
+#header img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    top: 70px;
+}
+
+#header div article {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header .col-8 {
+    position: relative;
+}
+
+#header .col-8 h1 {
+    position: absolute;
+    width: 750px;
+    height: 150px;
+    background-color: #EEA7A3;
+    font-size: 50px;
+    border-style: groove;
+    border-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header .col-8 h2 {
+    position: absolute;
+    width: 400px;
+    height: 90px;
+    background-color: #3E3F41;
+    color: white;
+    bottom: 40px;
+    font-size: 60px;
+    border-style: outset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

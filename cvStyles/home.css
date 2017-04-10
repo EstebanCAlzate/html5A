@@ -1,6 +1,79 @@
+#home {}
+
 #home article {
-    width: 100%;
+    position: relative;
+}
+
+#home .col-4 {
+    background-color: #ECEEED;
+}
+
+#home .col-4 h2 {
+    background-color: #ECEEED;
+    border-style: dotted;
+    border-color: #EEA7A3;
+    width: 300px;
+    height: 70px;
+    margin: 10px;
+    font-size: 50px;
+    color: #8C8C8C;
     display: flex;
-    flex-direction: row;
     align-items: center;
+    justify-content: center;
+}
+
+#home .col-4 .profile {
+    font-size: large;
+}
+
+#home .col-4 > article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+#home .col-4 .contact a {
+    font-size: large;
+    letter-spacing: 2px;
+    line-height: 70px;
+}
+
+#home .col-4 .skills a {
+    font-size: large;
+    letter-spacing: 2px;
+    line-height: 70px;
+}
+
+#home .col-4 .social {
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+    letter-spacing: 2px;
+    line-height: 70px;
+}
+
+#home .col-8 article {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: -100px;
+}
+
+#home .col-8 h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 70px;
+    margin: 10px;
+    background-color: #3E3F41;
+    color: white;
+    border-style: outset;
+    font-size: 40px;
+}
+
+#home .col-8 article .work-exp {
+    width: 500px;
 }
