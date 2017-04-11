@@ -42,17 +42,34 @@
 #home article.col-4 .contact a {
     color: black;
     position: absolute;
+    left: 250px;
+    padding: 10px;
 }
 
 #home article.col-4 .contact div {
     position: relative;
+    left: 22px;
+    top: 15px;
+    font-weight: bold;
     opacity: 0;
-    z-index: -10;
+    z-index: -20;
+    border-radius: 0px 198px 198px 198px;
+    -moz-border-radius: 0px 198px 198px 198px;
+    -webkit-border-radius: 0px 198px 198px 198px;
+    border: 2px solid #000000;
+    background-color: #EEA7A3;
+    -webkit-box-shadow: 11px 14px 5px -1px rgba(133, 109, 133, 0.27);
+    -moz-box-shadow: 11px 14px 5px -1px rgba(133, 109, 133, 0.27);
+    box-shadow: 11px 14px 5px -1px rgba(133, 109, 133, 0.27);
 }
 
 #home article.col-4 .contact a:hover + div {
     z-index: 0;
-    animation: showUp 1s forwards;
+    animation: showUp 1.5s forwards;
+}
+
+#home article.col-4 .contact a:hover {
+    animation: showLeft 1.2s forwards;
 }
 
 #home article.col-4 .skills p {
@@ -132,10 +149,21 @@
 @keyframes showUp {
     0% {
         opacity: 0;
-        transform: translateY(80px);
+        transform: scale(0);
+        /*transform: translateY(80px);*/
     }
     100% {
-        opacity: 1;
+        opacity: 0.5;
+        transform: scale(1);
+        /*transform: translateY(0);*/
+    }
+}
+
+@keyframes showLeft {
+    0% {
         transform: translateY(0);
+    }
+    100% {
+        transform: translateX(-120px);
     }
 }
