@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Arimo';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../assets/fonts/Arimo/Arimo-Regular.ttf )format('woff');
+}
+
+@font-face {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../assets/fonts/Lora/Lora-Regular.ttf )format('woff');
+}

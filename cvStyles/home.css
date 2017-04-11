@@ -4,11 +4,11 @@
     position: relative;
 }
 
-#home .col-4 {
+#home article.col-4 {
     background-color: #ECEEED;
 }
 
-#home .col-4 h2 {
+#home article.col-4 h2 {
     background-color: #ECEEED;
     border-style: dotted;
     border-color: #EEA7A3;
@@ -22,55 +22,98 @@
     justify-content: center;
 }
 
-#home .col-4 .profile {
+#home article.col-4 .profile {
     font-size: large;
 }
 
-#home .col-4 > article {
+#home article.col-4 article {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center
 }
 
-#home .col-4 .contact a {
-    font-size: large;
+#home article.col-4 .contact li {
     letter-spacing: 2px;
     line-height: 70px;
+    list-style: none;
 }
 
-#home .col-4 .skills a {
+#home article.col-4 .contact a {
+    color: black;
+    position: absolute;
+}
+
+#home article.col-4 .contact div {
+    position: relative;
+    opacity: 0;
+    z-index: -10;
+}
+
+#home article.col-4 .contact a:hover + div {
+    z-index: 0;
+    animation: showUp 1s forwards;
+}
+
+#home article.col-4 .skills p {
     font-size: large;
     letter-spacing: 2px;
-    line-height: 70px;
+    display: flex;
+    flex-direction: column;
 }
 
-#home .col-4 .social {
+#home article.col-4 .skills progress {
+    margin: 8px
+}
+
+#home article.col-4 .social {
+    display: flex;
     flex-direction: column;
     align-items: center;
     font-size: large;
-    letter-spacing: 2px;
-    line-height: 70px;
 }
 
-#home .col-4 .social div {
+#home article.col-4 .social div {
     flex-direction: row;
     align-items: center;
 }
 
+#home article.col-4 .social a {
+    color: blue;
+    margin: 20px;
+    justify-content: space-around;
+}
 
-#home .col-4 .social a {
-    color:blue;
-    margin:20px;
-    }
+#home article.col-8 {
+    position: relative;
+}
 
+#home article.col-8 article .work-exp {
+    width: 500px;
+}
 
-#home .col-8 article {
-    flex-direction: column;
+#home article.col-8 article {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    left: -100px;
+}
+
+#home article.col-8 article li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#home article.col-8 .lenguages ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+}
+
+#home .col-8 h3 {
+    width: 300px;
 }
 
 #home .col-8 h2 {
@@ -86,6 +129,13 @@
     font-size: 40px;
 }
 
-#home .col-8 article .work-exp {
-    width: 500px;
+@keyframes showUp {
+    0% {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

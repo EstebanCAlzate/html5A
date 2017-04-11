@@ -2,10 +2,14 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="cvStyles/home.css">
     <link rel="stylesheet" href="cvStyles/grid.css">
     <link rel="stylesheet" href="cvStyles/header.css">
+    <link rel="stylesheet" href="cvStyles/font.css">
+    <link rel="stylesheet" href="cvStyles/main.css">
     <link rel="stylesheet" href="node_modules/icono/dist/icono.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Lora" rel="stylesheet">
     <title>Esteban Camilo Alzate</title>
 </head>
 
@@ -32,21 +36,47 @@
                 </article>
                 <article class="contact">
                     <h2>CONTACT</h2>
-                    <a>numero de telefono</a>
-                    <a>email</a>
-                    <a>direccion</a>
+                    <ul>
+                        <li>
+                            <a class="icono-iphone"></a>
+                            <div class="caption">676807030</div>
+                        </li>
+                        <li>
+                            <a class="icono-mail"></a>
+                            <div class="caption">esteban.alzate@babel.es</div>
+                        </li>
+                        <li>
+                            <a class="icono-pin"></a>
+                            <div class="caption">C/ Paseo de la Estacion, 2, 1A</div>
+                        </li>
+                    </ul>
                 </article>
-                <article class="skills">
+                <article class="skills ">
                     <h2>SKILLS</h2>
-                    <a class="number">
-                        nada por ahora 
-                    </a>
-                    <a class="email">
-                        nada por ahora 
-                    </a>
-                    <a class="direction">
-                        nada por ahora 
-                    </a>
+                    <p class="skills-item ">
+                        HTML
+                        <progress value="70" max="100">70 %</progress>
+                    </p>
+                    <p class="skills-item">
+                        CSS
+                        <progress value="70" max="100">70 %</progress>
+                    </p>
+                    <p class="skills-item">
+                        JAVA
+                        <progress value="80" max="100">80 %</progress>
+                    </p>
+                    <p class="skills-item">
+                        PYTHON
+                        <progress value="70" max="100">70 %</progress>
+                    </p>
+                    <p class="skills-item">
+                        C#
+                        <progress value="60" max="100">60 %</progress>
+                    </p>
+                    <p class="skills-item">
+                        ADA
+                        <progress value="70" max="100">70 %</progress>
+                    </p>
                 </article>
                 <article class="social">
                     <h2>SOCIAL</h2>
@@ -61,23 +91,44 @@
                 <div id="work-information" class="container">
                     <article id="experience">
                         <h2 class="work-exp">WORK EXPERIENCE</h2>
-                        <a>experiencia 1</a>
-                        <a>experiencia 1</a>
-                        <a>experiencia 1</a>
-                        <a>experiencia 1</a>
+                        <ul>
+                            <li class="row">
+                                <h3 class="col-4"><time datetime="2016-07-01">07-2016</time> Curso sobre IOT</h3>
+                                <p class="col-8">Mentor para estudiantes de segundo de bachillerato realizado en la UPM.</p>
+                            </li>
+                            <li class="row">
+                                <h3 class="col-4"><time datetime="2017-04-07">04-2017</time> Practicas en BABEL</h3>
+                                <p class="col-8">Iniciativa BABELCAMP con formacion por parte de KeepCoding en tecnologias web y realizacion de un proyecyo final.</p>
+                            </li>
+                        </ul>
                     </article>
-                    <article id="education">
+                    <article class="education">
                         <h2>EDUCATION</h2>
-                        <a>education 1</a>
-                        <a>education 2</a>
-                        <a>education 3</a>
-                        <a>education 4</a>
+                        <ul>
+                            <li class="row">
+                                <h3><time datetime="2016"  class="col-4">2016</time></h3>
+                                <p class="col-8">Curso SoloLearn sobre Python</p>
+                            </li>
+                            <li class="row">
+                                <h3><time datetime="2016"  class="col-4">2016</time></h3>
+                                <p class="col-8">Curso SoloLearn sobre Html</p>
+                            </li>
+                            <li class="row">
+                                <h3><time datetime="2016"  class="col-4">2016</time></h3>
+                                <p class="col-8">Curso SoloLearn sobre CSS</p>
+                            </li>
+                            <li class="row">
+                                <h3><time datetime="2016" class="col-4">2016</time></h3>
+                                <p class="col-8">Obtencion de la acreditacion nivel B2</p>
+                            </li>
+                        </ul>
                     </article>
-                    <article id="lenguages">
+                    <article class="lenguages container">
                         <h2>LENGUAGES</h2>
-                        <a>lenguages 1</a>
-                        <a>lenguages 2</a>
-                        <a>lenguages 3</a>
+                        <ul>
+                            <li>Español</li>
+                            <li>Ingles</li>
+                        </ul>
                     </article>
                 </div>
             </article>

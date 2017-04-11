@@ -1,5 +1,6 @@
     #header {
         background-color: #EEA7A3;
+        position: relative;
     }
     
     #header img {
@@ -22,11 +23,11 @@
         align-items: center;
     }
     
-    #header .col-8 {
+    #header article.col-8 {
         position: relative;
     }
     
-    #header .col-8 h1 {
+    #header article.col-8 h1 {
         position: absolute;
         width: 750px;
         height: 150px;
@@ -39,7 +40,7 @@
         justify-content: center;
     }
     
-    #header .col-8 h2 {
+    #header article.col-8 h2 {
         position: absolute;
         width: 400px;
         height: 90px;
