@@ -20,6 +20,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-box-shadow: 7px 12px 16px 0px rgba(62, 63, 65, 0.38);
+    -moz-box-shadow: 7px 12px 16px 0px rgba(62, 63, 65, 0.38);
+    box-shadow: 7px 12px 16px 0px rgba(62, 63, 65, 0.38);
+}
+
+#home article.col-4 h2:hover,
+#home article.col-4 h2:active {
+    background-color: #EEA7A3;
 }
 
 #home article.col-4 .profile {
@@ -144,6 +152,9 @@
     color: white;
     border-style: outset;
     font-size: 40px;
+    -webkit-box-shadow: 7px 12px 16px 0px rgba(62, 63, 65, 1);
+    -moz-box-shadow: 7px 12px 16px 0px rgba(62, 63, 65, 1);
+    box-shadow: 7px 12px 16px 0px rgba(62, 63, 65, 1);
 }
 
 @keyframes showUp {
@@ -164,6 +175,57 @@
         transform: translateY(0);
     }
     100% {
-        transform: translateX(-120px);
+        transform: translateX(-150px);
     }
+}
+
+
+/*EFECTO BUBBLE FLOAT RIGHT*/
+
+.hvr-bubble-float-right {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.hvr-bubble-float-right:before {
+    position: absolute;
+    left: 290px;
+    z-index: -1;
+    right: 0;
+    content: '';
+    border-style: solid;
+    border-width: 20px 0 20px 20px;
+    border-color: transparent transparent transparent #ECEEED;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.hvr-bubble-float-right:hover,
+.hvr-bubble-float-right:focus,
+.hvr-bubble-float-right:active {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+}
+
+.hvr-bubble-float-right:hover:before,
+.hvr-bubble-float-right:focus:before,
+.hvr-bubble-float-right:active:before {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+}
+
+.hvr-bubble-float-right:hover:before,
+.hvr-bubble-float-right:focus:before,
+.hvr-bubble-float-right:active:before {
+    border-color: transparent transparent transparent #EEA7A3;
 }

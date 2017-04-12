@@ -4,7 +4,7 @@
     function validateForm() {
 
         //var inputs = Array.prototype.slice.call($('input'), 0);
-        var inputs = $('#contact input,#contact textare');
+        var inputs = $('#contact-text input,#contact-text textare');
 
         var validity = [];
 
@@ -29,7 +29,7 @@
 
     validateForm();
 
-    var button = document.querySelector('#contact button')
+    var button = document.querySelector('#contact-text button')
         .addEventListener('click', function(event) {
             event.preventDefault();
 
